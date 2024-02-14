@@ -38,6 +38,16 @@ img {
     display: none;
 }
 
+#slider #title:not(.active) {
+    display: none;
+}
+
+#slider #text:not(.active) {
+    display: none;
+}
+
+
+
 #slider #arrows {
     display: flex;
     flex-direction: row;
