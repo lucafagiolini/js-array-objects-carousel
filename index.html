@@ -26,17 +26,46 @@
 
 
 <body data-bs-theme="dark">
-    <div class="container">
+    <main class="container d-flex flex-column align-items-center">
 
-        <div id="slider">
+        <h1 class="text-cente text-uppercase ">carousel</h1>
+        <div id="carousel-box" class="mt-5 rounded-3">
+            <div class="row d-flex">
+                <div id="slider" class="col-9 flex-grow-1 test rounded-start-3">
+                    <div id="arrows" class="">
+                        <i id="up-arrow" class="fa-solid fa-arrow-left mx-3 fs-1"></i>
+                        <i id="down-arrow" class="fa-solid fa-arrow-right mx-3 fs-1"></i>
+                    </div>
+                </div>
+                <div id="selector-column" class="col-3 rounded-end-3">
+                    <div id="selector-img">
+                        <img src="./img/01.webp" alt="">
+                    </div>
+                    <div id="selector-img">
+                        <img src="./img/01.webp" alt="">
+                    </div>
+                    <div id="selector-img">
+                        <img src="./img/01.webp" alt="">
+                    </div>
+                    <div id="selector-img">
+                        <img src="./img/01.webp" alt="">
+                    </div>
+                    <div id="selector-img">
+                        <img src="./img/01.webp" alt="">
+                    </div>
 
-            <div id="arrows">
-                <i id="up-arrow" class="fa-solid fa-arrow-up"></i>
-                <i id="down-arrow" class="fa-solid fa-arrow-down"></i>
+
+
+                </div>
+
             </div>
+
         </div>
 
-    </div>
+    </main>
+
+
+
 
     <!-- JS -->
     <script type="text/javascript" src="./js/script.js"></script>
