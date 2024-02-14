@@ -31,6 +31,9 @@ const images = [
     }
 ];
 
+// 
+
+
 /*
 Adesso rimuoviamo tutto il markup statico e inseriamo tutte le immagini dinamicamente servendoci dell'array fornito e un semplice ciclo for che concatena un template literal. 
 Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile.
@@ -48,13 +51,21 @@ const sliderElement = document.getElementById("slider");
 
 
 // tramite un ciclo for prendiamo ogni indirizzo delle immagini dall'array
-for (let i = 0; i < images.length; i++) {
+images.forEach((image) => {
 
-    sliderElement.innerHTML += `<img src="./img/0${i + 1}.webp" alt="immagine ${i + 1}">`;
+    sliderElement.innerHTML += `<img src="${image.image}" alt="${image.title}">`;
 
     // per ognuno di essi andremo a creare un elemento img dentro lo slider
 
-}
+});
+
+// for (let i = 0; i < images.length; i++) {
+
+//     sliderElement.innerHTML += `<img src="./img/0${i + 1}.webp" alt="immagine ${i + 1}">`;
+
+//     // per ognuno di essi andremo a creare un elemento img dentro lo slider
+
+// }
 
 document.querySelector("#slider img:nth-of-type(1)").className = "active";
 
